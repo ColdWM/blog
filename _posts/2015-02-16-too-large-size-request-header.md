@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Too Large Date Request Header
 ---
 
