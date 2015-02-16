@@ -1,6 +1,8 @@
 ---
 layout: post
-title: Too Large Date Request Header
+title:  "Too large data in request header"
+date:   2015-02-16 14:00:00
+categories: jekyll update
 ---
 
 
