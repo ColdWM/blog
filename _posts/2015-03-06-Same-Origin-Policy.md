@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "White Space"
+title:  "Same Origin Policy"
 date:   2015-03-03 10:23:00
 categories: java web security
 ---
