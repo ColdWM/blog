@@ -14,13 +14,13 @@ myBatis와는 조금 다르다는 것을 다들 알 것이다.
 
 보통 myBatis에서
 {% highlight ruby %}
-  <if test="value == 'aaa'"> 
+<if test="value == 'aaa'"> 
 {% endhighlight %}
 와 같은 형태로 작성을 하지만...
 
 iBatis 에서는
 {% highlight ruby %}
-  <isEqual property="value" compareValue="aaa">
+<isEqual property="value" compareValue="aaa">
 {% endhighlight %}
 와 같은 형태로 작성을 하게 된다.
 
@@ -32,7 +32,7 @@ parameterClass를 string으로 주었을 때 내가 준 property를 ibatis에서
 
 근데
 {% highlight ruby %}
-  <isEqual property="testValue" compareValue="aaa">
+<isEqual property="testValue" compareValue="aaa">
 {% endhighlight %}
 라는 코드에서 property testValue는 java.lang.String에서 읽을 수 없다는 에러가 떳다.
 
