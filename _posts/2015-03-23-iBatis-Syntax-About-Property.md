@@ -30,7 +30,7 @@ parameterClass를 string으로 주었을 때 내가 준 property를 ibatis에서
   `<isEqual property="testValue" compareValue="aaa">`
 라는 코드에서 property testValue는 java.lang.String에서 읽을 수 없다는 에러가 떳다.
 
-알고보니 iBatis에서 string으로 parameter를 넘겨줄 때는
+알고보니 iBatis에서 string으로 parameter를 넘겨줄 때  그 변수가 한 개 뿐이라면
 isEqual과 같은 구문에서 property를 아예 작성할 필요가 없다고 한다.
 참고하도록하자.
 
