@@ -32,17 +32,17 @@ nhnent_10.png가 아닌, nhnent_12.png 나 nhnent_103.png 등 뒤에 숫자가 �
 
 이를 피하고 싶다면 c 태그 라이브러리를 쓰면 된다.
 
-  `<c:catch var="e">
-  	<c:import url="/img/nhnent_${pngNum}.png" var="imgSrc"/>
-  	</c:catch>
-  <c:choose>
-  	<c:when test="${empty e}">
-  	  <img src="/img/nhnent_${pngNum}.png">
-  	</c:when>
-  	<c:otherwise>
-    	<img src="/img/nhnent_1.png">
-  	</c:otherwise>
-  </c:choose>`
+  `<c:catch var="e">`
+  	`<c:import url="/img/nhnent_${pngNum}.png" var="imgSrc"/>`
+  	`</c:catch>`
+  `<c:choose>`
+  	`<c:when test="${empty e}">`
+  	  `<img src="/img/nhnent_${pngNum}.png">`
+  	`</c:when>`
+  	`<c:otherwise>`
+    	`<img src="/img/nhnent_1.png">`
+  `</c:otherwise>`
+  `</c:choose>`
 
 이 코드는 우선 /img/nhnent_${pngNum}.png 경로에 파일이 존재하는지 안하는지를 체크하게된다.
 만약 없다면 FileNotFoundException이 뜰 것이고 그렇게되면 var e 에 값이 담기게 된다.
