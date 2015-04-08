@@ -39,3 +39,15 @@ clearInterval을 이용하면 setInterval을 해준 것을 말그대로 clear해
 
 만약 다시 실행하고싶다면
 다시 setInterval을 해주면 된다.
+
+또한, 타이머를 한 번만 실행할 수 있는 방법도 있다.
+
+```javascript
+  setTimeout("example()", 5000);
+```
+
+위 코드로 실행을 하게 되면 5초 이후에 example() 함수를 호출하고
+더이상 함수 실행을 하지 않는다.
+
+본인이 자신이 원하는 때에만 딜레이를 준 후 특정 함수 실행을 하고 싶을 때는
+setTimeout()을 이용하면 된다.
