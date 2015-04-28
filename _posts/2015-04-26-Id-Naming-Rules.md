@@ -9,7 +9,7 @@ categories: javascript jquery
 ### HTML에서의 id naming rules
   
 지난번 포스트와 이어지는 내용이다.
-JavaScript jQuery에서 .(dot)이 들어간 id의 경우 \\을 앞에 추가하면 해결된다고 적은 바가 있다.
+JavaScript jQuery에서 .(dot)이 들어간 id의 경우 \\\을 앞에 추가하면 해결된다고 적은 바가 있다.
 
 ```html
   <input id="test.burj"/>
@@ -29,7 +29,7 @@ JavaScript jQuery에서 .(dot)이 들어간 id의 경우 \\을 앞에 추가하�
 (index는 루프문을 돌리기한 임의의 값)
 
 .(dot)만 해결하면 된다고 생각했는데 그게 아니었다.
-혹시나해서 대괄호 [ ] 양쪽에 똑같이 \\를 추가해줬다.
+혹시나해서 대괄호 [ ] 양쪽에 똑같이 \\\를 추가해줬다.
 
 ```javascript
   for (var i=0; i < index; i++) {
@@ -52,4 +52,4 @@ JavaScript jQuery에서 .(dot)이 들어간 id의 경우 \\을 앞에 추가하�
 보다시피, 괄호에 관한 언급이 없다.
 
 만약 괄호를 사용했는데 제대로 id를 찾지 못한다면
-해당 괄호 앞에 \\를 넣어볼 것을 추천한다.
+해당 괄호 앞에 \\\를 넣어볼 것을 추천한다.
