@@ -82,6 +82,6 @@ return otherValue()를 해줄 때 에러가 난다.
 	}
 ```
 
-위 예시에서 보듯이 sqlSessionFactory에서 제공하는 selectOne이 generic타입으로 리턴 중이다.
-이를 그대로 쓸 경우 maven 빌드에선 에러가 나므로
-고치기 위한 방법 중 하나인 type casting으로 처리하였다.
+위 예시에서 보듯이 sqlSessionFactory에서 제공하는 selectOne이 generic타입으로 리턴 중이다.  
+이를 그대로 쓸 경우 maven 빌드에선 에러가 나므로  
+고치기 위한 방법 중 하나인 type casting으로 처리하였다.  
