@@ -52,3 +52,35 @@ return otherValue()를 해줄 때 에러가 난다.
 해당 원인에 대해서는 maven의 오류라는 말도 있고
 이클립스가 에러를 캐치하지 못한다는 말도 있고...
 의견이 좀 나뉘는 듯 싶다.
+
+실제 에러가 일어난 케이스
+```java
+  /**
+   * {@inheritDoc}
+   */
+  public <T> T selectOne(String statement, Object parameter) {
+    return this.sqlSessionProxy.<T> selectOne(statement, parameter);
+  }
+  // sqlSessionFactory에 있는 selectOne 함수
+  
+  
+  /**
+	 * @return
+	 */
+	@Override
+	public int doSomething(String someValue) {    // 수정 전 코드. 즉, 이클립스에선 빌드 에러 미발생하지만 maven빌드에선 발생
+		return sqlSessionTemplate.selectOne("doSomething", someValue);
+	}
+	
+	/**
+	 * @return
+	 */
+	@Override
+	public int doSomething(String someValue) {    // 수정 후 코드
+		return (Integer)sqlSessionTemplate.selectOne("doSomething", someValue);
+	}
+```
+
+위 예시에서 보듯이 sqlSessionFactory에서 제공하는 selectOne이 generic타입으로 리턴 중이다.
+이를 그대로 쓸 경우 maven 빌드에선 에러가 나므로
+고치기 위한 방법 중 하나인 type casting으로 처리하였다.
