@@ -54,6 +54,7 @@ return otherValue()를 해줄 때 에러가 난다.
 의견이 좀 나뉘는 듯 싶다.
 
 실제 에러가 일어난 케이스
+
 ```java
   /**
    * {@inheritDoc}
@@ -65,8 +66,8 @@ return otherValue()를 해줄 때 에러가 난다.
   
   
   /**
-	 * @return
-	 */
+  * @return
+  */
 	@Override
 	public int doSomething(String someValue) {    // 수정 전 코드. 즉, 이클립스에선 빌드 에러 미발생하지만 maven빌드에선 발생
 		return sqlSessionTemplate.selectOne("doSomething", someValue);
