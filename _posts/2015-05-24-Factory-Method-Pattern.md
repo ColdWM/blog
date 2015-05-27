@@ -1,3 +1,11 @@
+---
+layout: post
+title:  "Factory Method Pattern"
+date:   2015-05-24 09:40:00
+categories: designpattern java
+---
+
+
 ## Factory Method 패턴 ##
 
 이번 스터디 정리는 Factory Method 패턴이다.  
