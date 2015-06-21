@@ -46,7 +46,7 @@ public class TikaDemo {
 ```
 
 mimetype으로 파일의 내부를 알 수 있다.  
-이 mimetype은 정해진 형식이 있다.[링크]*\(http://www.sitepoint.com/web-foundations/mime-types-complete-list/)  
+이 mimetype은 정해진 형식이 있다. [링크](http://www.sitepoint.com/web-foundations/mime-types-complete-list/) . 
 
 위 링크에서처럼 확장자와 mimetype이 다르다면  
 확장자를 임의로 바꾼 파일이라는 뜻이 된다.  
