@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "SQL Functions"
+title:  "자주 썼던 SQL Functions"
 date:   2015-06-28 23:30:00
 categories: sql
 ---
