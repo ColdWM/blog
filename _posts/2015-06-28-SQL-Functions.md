@@ -6,7 +6,7 @@ categories: sql
 ---
 
 
-### SQL Functions
+### 자주 썼던 SQL Functions
 
 그간 DB 쿼리를 짜면서 이용한 함수들 중 자주 이용하여  
 기억에 남는 3개를 정리해보고자 한다.
