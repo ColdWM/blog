@@ -8,7 +8,7 @@ categories: designpattern java
 
 ## Factory Method 패턴 ##
 
-이번 스터디 정리는 Factory Method 패턴이다.  
+이번 스터디 정리는 Factory Method패턴이다.  
 factory는 말 그대로 공장이란 의미를 갖고 있다.  
 Template Metho패턴으로 인스턴스를 생성하는 공장을 구성한 것으로,  
 인스턴스를 만드는 방법을 상위 클래스에서 결정하나, 구체적인 클래스 이름까지는 결정하지 않는 패턴이다.
