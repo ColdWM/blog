@@ -20,7 +20,7 @@ u+2028, u+2029 라는 공백문자가 자바스크립트 변수값으로 들어�
 u+2028과 u+2029는 둘다 line terminator로 작동하는데
 (u+2028은 line separator, u+2029는 paragraph separator)
 내 생각엔 저 이유로 인해 변수가 제대로 선언이 안 된 것처럼 인식한게 아닌가 싶다.
-예를 들자면...
+예를 들자면..
 
   var temp = "abcde"";
 

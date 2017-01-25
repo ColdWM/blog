@@ -19,7 +19,7 @@ JavaScript jQuery에서 .(dot)이 들어간 id의 경우 \\\을 앞에 추가하
 ```
 
 그런데 최근에 작성한 코드 중에서 저걸 추가해주었음에도 불구하고
-여전히 해당 id의 요소를 select하지 못하는 현상이 발생했다.
+여전히 해당 id의 요소를 select하지 못하는 현상이 발생했다…!
 
 ```javascript
   for (var i=0; i < index; i++) {
