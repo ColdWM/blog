@@ -12,6 +12,6 @@ categories: web
 
 1. ftp를 이용해 우선 내 계정에 abc.zip을 올린다.  
 
-2. 터미널로 들어가서 scp abc.zip irteam@서버주소:경로  
+2. 터미널로 들어가서 scp abc.zip 계정명@서버주소:경로  
 
 이렇게하면 파일이 서버로 카피되서 올라간다.
